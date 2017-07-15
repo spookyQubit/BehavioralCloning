@@ -1,0 +1,7 @@
+data/
+data.tar.gz
+model_50.h5
+run1
+stitched*
+*.swp
+*ipynb_checkpoints
