@@ -11,13 +11,16 @@ The project uses a simulator provided by Udacity. The simulator can be used to d
 **Behavioral Cloning Project Goals**
 
 The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
+* Use the Udacity simulator to collect data of good driving behavior
 * Build, a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 
+---
 
-Augmentation and data collection
+**Augmentation and data collection**
+
+The project initially included aroud 11000x3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the car**.  
 
 The input images
 
