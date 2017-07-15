@@ -12,6 +12,8 @@ The project uses a simulator provided by Udacity. The simulator can be used to d
 
 [image1]: ./images_writeup/sample_images.png "Sample Images"
 [image2]: ./images_writeup/features_stats.png "Features Stats"
+[image3]: ./images_writeup/processed_images.png "Preprocessed Images"
+
 
 
 
@@ -37,12 +39,19 @@ The project initially included aroud 11000 x 3 imagaes. Just training with these
 Some sample center images (without any processing) which form the input to our model with their corresponding steering angles:
 ![alt text][image1]
 
-In order to visualize the additional features available in the data, we plot below the histogram of the brake/speed/steerirng and throttle. These statistics are for images before augmentation. Only steering is what our model needs to predict. 
+In order to visualize the additional features available in the data, we plot below the histogram of the brake/speed/steerirng and throttle. Only steering is what our model needs to predict. 
 ![alt text][image2]
-It is clear from looking at the above figure that the data is highle un-balanced, with most of the data points corresponding to steering angle being zero. This is the reason it is extremely important to collect additional data to include scenarios where the car recovers from the edge by taking sharp turns.  
-
+It is clear from looking at the above figure that the data is highle un-balanced, with most of the data points corresponding to steering angle being zero. These statistics are for images before augmentation. Before augmentation, the unbalance was even more and particular emphasis was given to increas the spread of steering angle distribution by collecting additional data to include scenarios where the car recovers from the edge by taking sharp turns.  
 
 **The preprocesed images**
+In order to help the model learn relevant features and not something which can possibly be useful for the task at hand certain pre-processing was done before the model was fed to the initial layer of the neural-network. There were many pre-processing steps which were experimented with but the ones which were used are:
+ * Cropping the image
+ * Converting the image to grey scale
+ * Histogram Equalizing
+ * Normalizing the image
+The images after pre-processing looked like:
+![alt text][image3]
+
 
 Architecture:
 Two models were tried: 
