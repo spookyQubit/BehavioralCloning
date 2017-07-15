@@ -74,13 +74,10 @@ The architecture which worked better was the Nvdia model. The structure of the m
 |dense_91 (Dense)                  |(None, 50)         |5050    |dense_90               |
 |dense_92(Dense)                   |(None, 10)         |510     |dense_91               |
 |dense_93 (Dense)                  |(None, 1)          |11      |dense_92               |
-|                                  |**Total params**   |558219 |                       |
+|                                  |**Total params**   |558219  |                       |
 
 
-The learning curve
-
-Keras was used to code the model up.    
-
+Keras was used to code the model. Adam optimizer was used with mean-squared-error as the loss function for regression. The Keras default learning rate of 0.001 was used for the optimizer. The model was trainied in AWS cluster which were gpu enabled. Having gpu made trail and error and iteration very efficient.     
 
 Video
 
