@@ -20,9 +20,13 @@ The goals / steps of this project are the following:
 
 **Augmentation and data collection**
 
-The project initially included aroud 11000x3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the car**.  
+The project initially included aroud 11000x3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the road**. Collecting additional data significanty improved the model performance.   
 
-The input images
+---
+
+**The input images**
+
+
 
 The stats
 
