@@ -49,7 +49,8 @@ In order to help the model learn relevant features and not something which can p
  * Converting the image to grey scale
  * Histogram Equalizing
  * Normalizing the image
-The images after pre-processing looked like:
+
+The images after pre-processing looked like the following:
 ![alt text][image3]
 
 
