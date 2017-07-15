@@ -1,3 +1,5 @@
+**Introduction**
+
 Every major player in the automotive industry today is in a race to create autonomous cars, cars which will not require human intervention. 
 
 One key reason why many believe that self driving cars can be a reality in near future is the recent scientific and technological advancements made in machine learning, in particular the progress made in implementing neural networks for recognizing and classifying images.
@@ -5,6 +7,11 @@ One key reason why many believe that self driving cars can be a reality in near 
 Inspired by this optimism, the current project explores the idea of using neural networks **alone** to train a car to drive on its own!
 
 The project uses a simulator provided by Udacity. The simulator can be used to drive a car and capture images taken from three camera angles - left, right and center. Along with capturing the images, the simulator also records the steering angle corresponding to each image. This image/steering-angle pair becomes the data we need to learn a model to make the car drive autonomously. Specifically, the images become the features, the input to the model which then predicts an appropriate steering angle to keep the car on track and not wander off. 
+
+[//]: # (Image References)
+
+[image1]: .//placeholder.png "Model Visualization"
+
 
 ---
 
@@ -20,12 +27,12 @@ The goals / steps of this project are the following:
 
 **Augmentation and data collection**
 
-The project initially included aroud 11000x3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the road**. Collecting additional data significanty improved the model performance.   
+The project initially included aroud 11000 x 3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the road**. Collecting additional data significanty improved the model performance.   
 
 ---
 
 **The input images**
-
+Some sample center images (without any processing) which form the input to our model are    
 
 
 The stats
