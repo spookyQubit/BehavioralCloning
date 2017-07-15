@@ -79,8 +79,6 @@ The architecture which worked better was the Nvdia model. The structure of the m
 
 Keras was used to code the model. Adam optimizer was used with mean-squared-error as the loss function for regression. The Keras default learning rate of 0.001 was used for the optimizer. The model was trainied in AWS cluster which were gpu enabled. Having gpu made trail and error and iteration very efficient.     
 
-Video
-
-
-Conclusion
+**Conclusion**
+It was a great but challenging project to work with. The project was a great apportunity for me to explore Keras and read a lot of literature on autonomous driving. 
 
