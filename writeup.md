@@ -24,14 +24,14 @@ The project uses a simulator provided by Udacity. The simulator can be used to d
 
 The goals / steps of this project are the following:
 * Use the Udacity simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
+* Build a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 
 
 **Augmentation and data collection**
 
-The project initially included aroud 11000 x 3 imagaes. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, the data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the road**. Collecting additional data significanty improved the model performance.   
+The project initially included aroud 11000 x 3 images. Just training with these images was not enough to train the model. Additional images were collected by driving the car in the training mode. In order **to reduce the bias towards learning only to drive counter-clockwise, data was collected by driving the car in clockwise direction**. Also, **data was collected with car recovering from the edge of the road**. Collecting additional data significanty improved the model performance.   
 
 
 **The input images**
@@ -39,12 +39,12 @@ The project initially included aroud 11000 x 3 imagaes. Just training with these
 Some sample center images (without any processing) which form the input to our model with their corresponding steering angles:
 ![alt text][image1]
 
-In order to visualize the additional features available in the data, we plot below the histogram of the brake/speed/steerirng and throttle. Only steering is what our model needs to predict. 
+In order to visualize the additional features available in the data, we plot below the histogram of brake/speed/steerirng and throttle. Only steering is what our model needs to predict. 
 ![alt text][image2]
-It is clear from looking at the above figure that the data is highle un-balanced, with most of the data points corresponding to steering angle being zero. These statistics are for images before augmentation. Before augmentation, the unbalance was even more and particular emphasis was given to increas the spread of steering angle distribution by collecting additional data to include scenarios where the car recovers from the edge by taking sharp turns.  
+It is clear from looking at the above figure that the data is highly un-balanced, with most of the data points corresponding to steering angle being zero. These statistics are for images after augmentation. Before augmentation, the unbalance was even more and particular emphasis was given to increas the spread of steering angle distribution by collecting additional data to include scenarios where the car recovers from the edge by taking sharp turns.  
 
 **The preprocesed images**
-In order to help the model learn relevant features and not something which can possibly be useful for the task at hand certain pre-processing was done before the model was fed to the initial layer of the neural-network. There were many pre-processing steps which were experimented with but the ones which were used are:
+In order to help the model learn relevant features and not something which possibly cannot be useful for the task at hand, certain pre-processing was done before the model was fed to the initial layer of the neural-network. There were many pre-processing steps which were experimented with but the ones which were finally used are:
  * Cropping the image
  * Converting the image to grey scale
  * Histogram Equalizing
@@ -81,5 +81,5 @@ Keras was used to code the model. Adam optimizer was used with mean-squared-erro
 
 **Conclusion**
 
-It was a great but challenging project to work with. The project was a great apportunity for me to explore Keras and read a lot of literature on autonomous driving. 
+It was a great but challenging project to work with. The project was a good apportunity for me to explore Keras and read a lot of literature on autonomous driving. 
 
