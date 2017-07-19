@@ -84,5 +84,5 @@ Click below to look at the video of the car in action on YouTube!
 
 **Conclusion**
 
-It was a great but challenging project to work with. The project was a great apportunity for me to explore Keras and read a lot of literature on autonomous driving. 
+It was a great and challenging project to work with. The project was a good apportunity for me to explore Keras and read a lot of literature on autonomous driving. 
 
